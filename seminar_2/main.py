@@ -11,7 +11,7 @@ def multi_list(n):
 
 
 def multi_list_rich(n):
-    return list(map(multi_list, [*range(1, n)]))
+    return list(map(multi_list, [*range(1, n + 1)]))
 
 
 def print_line(li):
@@ -23,8 +23,3 @@ if __name__ == '__main__':
     print_line(multi_list(4))
     print('\nТаблица умножения от 1 до n:')
     list(map(print_line, multi_list_rich(4)))
-
-
-
-
-
